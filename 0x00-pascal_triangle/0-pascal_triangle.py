@@ -5,6 +5,10 @@ Pascals Triangle
 
 def pascal_triangle(n):
     """Getting the pascals triangle for n"""
+
+    if n <= 0:
+        return []
+    
     PascalTriangle = []
 
     for row_number in range(n):
