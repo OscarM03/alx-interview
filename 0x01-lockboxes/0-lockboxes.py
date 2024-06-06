@@ -26,7 +26,7 @@ def canUnlockAll(boxes):
         # Iterate through all the keys in the box
         for key in boxes[current_box]:
             # Check if any of them has not been used to unlock a box
-            if not visited[key]:
+            if key < n and not visited[key]:
                 # Once we get the key we set the box to true, meaning
                 # it has been unlocked
                 visited[key] = True
