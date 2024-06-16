@@ -2,7 +2,7 @@
 """Minimum Operation"""
 
 
-def minOperations(n):
+def minOperations(n: int) -> int:
     """Get the minimum operations in a file"""
     if n <= 0:
         return 0
