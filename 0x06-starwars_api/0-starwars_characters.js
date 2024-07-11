@@ -4,7 +4,8 @@
 const request = require('request');
 
 const movieId = process.argv[2];
-const apiURL = `https://swapi.dev/api/films/${movieId}/`;
+const apiURL = `https://swapi-api.alx-tools.com/api/films/${movieId}/`;
+
 
 function getMovieInfo () {
   request(apiURL, (error, response, body) => {
